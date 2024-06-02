@@ -26,3 +26,19 @@ let someNumber = 33
 let stringNumber = String(someNumber)
 console.log(stringNumber)
 console.log(typeof stringNumber)
+
+// *************** OPERATIONS *****************
+
+console.log("OPERATIONS");
+
+let value = 3
+let negValue = -3
+console.log(negValue);
+
+console.log("1" + 2);
+console.log("1" + "2");
+console.log("1" + 2 + 2);
+console.log(1 + 2 + "2");
+
+// check for prefix and postfix js mdn syntax online
+
