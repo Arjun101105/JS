@@ -4,12 +4,12 @@ while(i<=10){
     i = i + 2;
 }
 
-let Arr = 0
+let index = 0
 
 let myArr = ["flash", "batman", "arrow"] 
-while(Arr<myArr.length){    
-    console.log(`value is: ${myArr[Arr]}`);
-    Arr++
+while(index<myArr.length){    
+    console.log(`value is: ${myArr[index]}`);
+    index++
 }
 
 // do while loop

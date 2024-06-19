@@ -37,7 +37,7 @@ console.log(obj5);
 console.log(InstaUser);
 console.log(Object.keys(InstaUser))
 console.log(Object.values(InstaUser))
-console.log(Object.entries(InstaUser))
+console.log(Object.entries(InstaUser)) //Returns an array of key/values of the enumerable properties of an object
 console.log(InstaUser.hasOwnProperty('isLoggedIn'))
 console.log(InstaUser.hasOwnProperty('isLoggedOut'))
 

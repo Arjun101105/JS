@@ -17,7 +17,7 @@ map.set('KR', 'Korea')
 map.set('ESP', 'Spain')
 map.set('POR', 'Portugal')
 
-// console.log(map);
+console.log(map);
 
 for (const key of map) { 
     console.log(key);  // returns an array

@@ -22,6 +22,6 @@ console.log(secDate);
 console.log(secDate.getDay()); // output shows 1 => which means MONDAY
 console.log(secDate.getMonth());
 
-newDate.toLocaleString('default', {
-    weekday: "long"
-})
+// console.log(newDate.toLocaleString('default', {
+//     weekday: "long"
+// }))

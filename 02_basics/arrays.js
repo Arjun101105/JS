@@ -23,7 +23,7 @@ console.log(myArr);
 myArr.shift() // removes 0th element from your array
 console.log(myArr);
 
-const newArr = myArr2.join()
+const newArr = myArr2.join() //Adds all the elements of an array into a string, separated by the specified separator string.
 console.log(myArr2);
 console.log(newArr);
 console.log(typeof(newArr));

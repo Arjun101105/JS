@@ -1,21 +1,21 @@
 // +++++++++++++++++++++++++ NUMBERS ++++++++++++++++++++++ 
 const score = 100
-// console.log(score);
+console.log(score);
 
 const balance = new Number(100)
-// console.log(balance);
+console.log(balance);
 
-// console.log(balance.toString());
-// console.log(balance.toFixed(2));
+console.log(balance.toString());
+console.log(balance.toFixed(2)); // returns upto 2 decimal places
 
 const newNum = 23.6969
-// console.log(newNum.toPrecision(3));
+console.log(newNum.toPrecision(3)); // rounds-up values .... expected output => 23.7
 
 const secNum = 123.6969
-// console.log(secNum.toPrecision(3));
+console.log(secNum.toPrecision(3)); // expected output => 124
 
-const hundred = 1000000
-// console.log(hundred.toLocaleString());
+const hundred = 100000
+console.log(hundred.toLocaleString());
 
 // ++++++++++++++++++++++ MATHS ++++++++++++++++++++++++
 

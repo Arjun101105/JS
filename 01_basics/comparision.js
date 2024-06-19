@@ -8,7 +8,7 @@ console.log(null == 0);
 console.log(null > 0);
 console.log(null >= 0);
 
- // strict check => checks fo rdatatype also
+ // strict check => checks for datatype also
  console.log("Strict Check");
 console.log("2" === 2);
 console.log("2" === "2");

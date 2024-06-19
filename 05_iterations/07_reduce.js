@@ -1,7 +1,7 @@
 const myNum = [1,2,3,4]
 
 let myTotal = myNum.reduce((acc, currVal)=>{
-    console.log(`acc is ${acc} and Current Val is: ${currVal}`);
+    console.log(`acc is ${acc} and Current Val is: ${currVal}`); // acc => accumulator
     return acc + currVal
 },
  0) // 0 is acc value
