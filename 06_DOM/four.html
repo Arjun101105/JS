@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur Code | DOM</title>
+</head>
+<body style="background-color: black; color: yellow;">
+    <ul class="lang">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function add_lang(lang_name){
+        const li = document.createElement('li')
+        li.innerHTML = (`${lang_name}`)
+        document.querySelector('.lang').appendChild(li)
+    }
+
+    add_lang("py")
+    add_lang("cpp")
+
+    function optimized_way(lang_name){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(lang_name))
+        document.querySelector('.lang').appendChild(li)
+    }
+
+    optimized_way ('golang')
+
+    // ******** To Edit Values *********
+    
+    const sec_lang = document.querySelector("li:nth-child(2)")
+    // sec_lang.innerHTML = "mojo"
+
+    const new_li = document.createElement('li')
+    new_li.textContent = "mojo"
+    sec_lang.replaceWith(new_li)
+
+    // another way
+
+    const first_lang = document.querySelector('li:first-child')
+    first_lang.outerHTML = '<li>TypeScript</li>'
+
+    // remove
+
+    const last_lang = document.querySelector('li:last-child')
+    last_lang.remove()
+
+</script>
+</html>
