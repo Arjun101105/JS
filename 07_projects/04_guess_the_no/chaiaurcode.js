@@ -43,6 +43,13 @@ function validate_guess(guess){
     }
 }
 
+function display_guess(guess){
+    user_input.value = ''
+    guess_slot.innerHTML += `${guess}  `
+    num_guess++;
+    remaining.innerHTML = `${11 - num_guess}`
+}
+
 function check_guess(guess){
     if(guess === random_number){
         display_message("Right Answer ! <3")
@@ -54,12 +61,6 @@ function check_guess(guess){
     }
 }
 
-function display_guess(guess){
-    user_input.value = ''
-    guess_slot.innerHTML += `${guess}  `
-    num_guess++;
-    remaining.innerHTML = `${11 - num_guess}`
-}
 
 function display_message(message){
     lowOrHi.innerHTML = `<h2>${message}</h2>`;
