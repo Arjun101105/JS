@@ -4,7 +4,7 @@ const submit = document.querySelector('#subt')
 const user_input = document.querySelector('#guessField')
 const guess_slot = document.querySelector('.guesses')
 const remaining = document.querySelector('.lastResult')
-const lowOrHi = document.querySelector('lowOrHi')
+const lowOrHi = document.querySelector('.lowOrHi')
 const start_over = document.querySelector('.resultParas')
 
 
