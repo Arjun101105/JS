@@ -58,9 +58,8 @@
     </div>
   </body>
   <script>
-
     // document.getElementById('owl').onclick = function(){
-        // alert('Owl Clicked')
+    // alert('Owl Clicked')
     // }
     // other method "attachEvent()"
 
@@ -68,21 +67,45 @@
     //     console.log(e);
     // })
 
-
-    document.getElementById('images').addEventListener('click', function(e){
+    document.getElementById("images").addEventListener(
+      "click",
+      function (e) {
         console.log("clicked inside the UL");
-    }, false)
-    
-    document.getElementById('owl').addEventListener('click', function(e){
+      },
+      false
+    );
+
+    document.getElementById("owl").addEventListener(
+      "click",
+      function (e) {
         console.log("owl clicked");
-        e.stopPropagation() // stops bubbling
-    }, false)
+        e.stopPropagation(); // stops bubbling
+      },
+      false
+    );
 
+    document.getElementById("google"),
+      addEventListener(
+        "click",
+        function (e) {
+          e.preventDefault();
+          e.stopPropagation(); // stops bubbling
 
-    document.getElementById('google'),addEventListener('click', function(e){
-        console.log("google clicked");
-        e.preventDefault()
-    }, false)
+          console.log("google clicked");
+        },
+        false
+      );
 
+    document.querySelector("#images").addEventListener("click", function (e) {
+      console.log(e.target.tagName);
+
+      if (e.target.tagName === "IMG") {
+
+        let remove_img = e.target.parentNode;
+        
+        remove_img.remove();
+
+      }
+    });
   </script>
 </html>
