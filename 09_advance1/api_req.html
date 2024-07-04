@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API request and v8 Engine</title>
+  </head>
+  <body style="background-color: #212121; color: antiquewhite"></body>
+  <script>
+    const req_url = "https://api.github.com/users/Arjun101105";
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", req_url);
+
+    xhr.onreadystatechange = function(){
+        
+        console.log(xhr.readyState);
+        if (xhr.readyState === 4) {
+            console.log(this.responseText);
+        }
+    }
+
+    xhr.send()
+
+  </script>
+</html>
