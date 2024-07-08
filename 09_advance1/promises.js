@@ -54,7 +54,7 @@ promise_four
 
 const promise_five = new Promise(function (resolve, reject) {
   setTimeout(function () {
-    let error = false
+    let error = false;
     if (!error) {
       resolve({ username: "Rohini", Insta: "BLOCKED" });
     } else {
@@ -68,8 +68,30 @@ async function consumedPromiseFive() {
     const resp = await promise_five;
     console.log(resp);
   } catch {
-    console.log("ERROR")
+    console.log("ERROR");
   }
 }
 
 consumedPromiseFive();
+
+async function getAllUsers() {
+  try {
+    const response = await fetch(
+      "https://jsonplaceholder.typicode.com/todos/1"
+    );
+    const data = await response.json();
+    console.log(data);
+  } catch (error) {
+    console.log("An ERROR occured !!");
+  }
+}
+getAllUsers();
+
+fetch("https://jsonplaceholder.typicode.com/todos/1")
+  .then((response) => {
+    return response.json();
+  })
+  .then((data)=>{
+    console.log(data);
+  })
+  .catch((error) => console.log(error));
