@@ -12,5 +12,4 @@ function createUser(username, email, password){
 
 const chai = new createUser("CHAI" , "chai@chaicode.com", "696969")
 console.log(chai);
-// git config --global user.email "you@example.com"
-// git config --global user.name "Your Name"
+
